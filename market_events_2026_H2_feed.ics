@@ -1,0 +1,889 @@
+BEGIN:VCALENDAR
+PRODID:-//OpenAI//Market Events 2026 H2//ZH-TW
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:2026市場重大事件行事曆（台股／美股）
+X-WR-CALDESC:台股與美股重要總經、結算、休市與財報事件
+ ；時間以台灣時間呈現。
+X-WR-TIMEZONE:Asia/Taipei
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Asia/Taipei
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+TZNAME:CST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:742fa1c2-8f2f-5c60-b73a-eff104881324@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】台指期／台指選月結算
+DTSTART;VALUE=DATE:20260617
+DTEND;VALUE=DATE:20260618
+TRANSP:TRANSPARENT
+LOCATION:台灣期貨市場
+CATEGORIES:台股\,期貨\,選擇權\,結算
+DESCRIPTION:台指期與台指選擇權月到期契約最後交易日；
+ 權值股與指數尾盤波動需留意。\\nSource: TAIFEX 2026 trading
+  calendar: https://www.taifex.com.tw/file/taifex/CHINESE/4/2026Calendar.
+ pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:196208bc-c120-52fe-b21d-78736273649d@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】FOMC利率決議／記者會
+DTSTART;TZID=Asia/Taipei:20260618T020000
+DTEND;TZID=Asia/Taipei:20260618T033000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,FOMC
+DESCRIPTION:Fed利率決議與主席記者會。事件時間已換算為
+ 台灣時間；12月因美國進入冬令時間，為03:00。\\nSource: 
+ Federal Reserve FOMC calendar: https://www.federalreserve.gov/monetarypo
+ licy/fomccalendars.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:8c92c3af-f4a0-52d2-a20b-55d659312d0c@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美股】四巫日／季度選擇權與期貨到期
+DTSTART;VALUE=DATE:20260618
+DTEND;VALUE=DATE:20260619
+TRANSP:TRANSPARENT
+LOCATION:美國市場
+CATEGORIES:美股\,選擇權\,四巫日
+DESCRIPTION:美股季度衍生性商品到期與再平衡，容易放大
+ 成交量與尾盤波動。6月因Juneteenth休市，需特別留意提
+ 前到期安排。\\nSource: Cboe 2026 options expiration calendar: http
+ s://cdn.cboe.com/resources/options/Cboe2026OPTIONSCalendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:abe710ce-f874-5377-b444-2e75fa268e8a@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台灣】中央銀行理監事會
+DTSTART;VALUE=DATE:20260618
+DTEND;VALUE=DATE:20260619
+TRANSP:TRANSPARENT
+LOCATION:台灣
+CATEGORIES:台股\,總經\,央行
+DESCRIPTION:台灣央行理監事聯席會議；會後召開記者會，
+ 需留意利率、匯率與房市信用管制訊號。\\nSource: Central
+  Bank of the Republic of China (Taiwan) 2026 board-meeting schedule: htt
+ ps://www.cbc.gov.tw/tw/cp-302-189514-82841-1.html
+END:VEVENT
+BEGIN:VEVENT
+UID:91e4fa3a-d3e6-5a16-9104-a6cba826b9c7@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美股】Juneteenth休市
+DTSTART;VALUE=DATE:20260619
+DTEND;VALUE=DATE:20260620
+TRANSP:TRANSPARENT
+LOCATION:美國市場
+CATEGORIES:美股\,休市
+DESCRIPTION:NYSE／Nasdaq交易日曆；提前收盤通常為美東時間
+ 13:00。\\nSource: NYSE/Nasdaq market holiday calendars.
+END:VEVENT
+BEGIN:VEVENT
+UID:18524abe-a750-50cb-8920-0d84d8ab26c7@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】端午節休市
+DTSTART;VALUE=DATE:20260619
+DTEND;VALUE=DATE:20260620
+TRANSP:TRANSPARENT
+LOCATION:台灣證券市場
+CATEGORIES:台股\,休市
+DESCRIPTION:台灣證券交易所115年市場開休市日期。\\nSource:
+  TWSE 2026 market holiday schedule: https://www.twse.com.tw/holidaySched
+ ule/holidaySchedule?response=html
+END:VEVENT
+BEGIN:VEVENT
+UID:237feddd-ef91-5e2a-b7b9-f566b4496d2e@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】PCE物價／Q1 GDP三估公布
+DTSTART;TZID=Asia/Taipei:20260625T203000
+DTEND;TZID=Asia/Taipei:20260625T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,PCE\,GDP
+DESCRIPTION:BEA Personal Income and Outlays／PCE物價，以及同日GDP
+ 估值更新。事件時間已換算為台灣時間。\\nSource: U.S. BE
+ A release schedule: https://www.bea.gov/news/schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:5fc732af-aa86-5e5b-9ee6-e65ade7c6a25@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】6月非農就業公布
+DTSTART;TZID=Asia/Taipei:20260702T203000
+DTEND;TZID=Asia/Taipei:20260702T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,就業
+DESCRIPTION:Employment Situation／非農就業報告，影響利率預
+ 期與景氣循環判讀。事件時間已換算為台灣時間。\\nSou
+ rce: U.S. BLS 2026 release schedule: https://www.bls.gov/schedule/2026/h
+ ome.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:49d63196-256a-56e6-8552-302cbc6ca2db@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美股】美國獨立紀念日補假休市
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260704
+TRANSP:TRANSPARENT
+LOCATION:美國市場
+CATEGORIES:美股\,休市
+DESCRIPTION:NYSE／Nasdaq交易日曆；提前收盤通常為美東時間
+ 13:00。\\nSource: NYSE/Nasdaq market holiday calendars.
+END:VEVENT
+BEGIN:VEVENT
+UID:27361c5c-5727-5f08-a7b7-5b29e5db980d@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】上市櫃6月營收公告期限
+DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260711
+TRANSP:TRANSPARENT
+LOCATION:公開資訊觀測站
+CATEGORIES:台股\,月營收\,基本面
+DESCRIPTION:上市公司每月十日前申報上月份營業額資料；
+ 實務上重大個股會在公告前後提前反映。\\nSource: TWSE re
+ gulation knowledge base: monthly revenue filed before the 10th of each m
+ onth.
+END:VEVENT
+BEGIN:VEVENT
+UID:6c2e294a-75a2-54ad-b1fe-b89f20c878d1@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】6月CPI公布
+DTSTART;TZID=Asia/Taipei:20260714T203000
+DTEND;TZID=Asia/Taipei:20260714T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,CPI
+DESCRIPTION:美國消費者物價指數，影響利率預期、美債殖
+ 利率、美元與科技股估值。事件時間已換算為台灣時間
+ 。\\nSource: U.S. BLS 2026 release schedule: https://www.bls.gov/schedu
+ le/2026/home.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:77b3b810-2afc-5c42-b2b2-3559c05f25ac@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】6月PPI公布
+DTSTART;TZID=Asia/Taipei:20260715T203000
+DTEND;TZID=Asia/Taipei:20260715T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,PPI
+DESCRIPTION:美國生產者物價指數，常作為通膨與企業成本
+ 壓力的輔助觀察。事件時間已換算為台灣時間。\\nSource
+ : U.S. BLS 2026 release schedule: https://www.bls.gov/schedule/2026/home
+ .htm
+END:VEVENT
+BEGIN:VEVENT
+UID:1f584cde-a084-5d7f-9075-52eafa917e22@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】台指期／台指選月結算
+DTSTART;VALUE=DATE:20260715
+DTEND;VALUE=DATE:20260716
+TRANSP:TRANSPARENT
+LOCATION:台灣期貨市場
+CATEGORIES:台股\,期貨\,選擇權\,結算
+DESCRIPTION:台指期與台指選擇權月到期契約最後交易日；
+ 權值股與指數尾盤波動需留意。\\nSource: TAIFEX 2026 trading
+  calendar: https://www.taifex.com.tw/file/taifex/CHINESE/4/2026Calendar.
+ pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:87520ea0-ed70-5afe-80b6-395c7470c483@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】FOMC利率決議／記者會
+DTSTART;TZID=Asia/Taipei:20260730T020000
+DTEND;TZID=Asia/Taipei:20260730T033000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,FOMC
+DESCRIPTION:Fed利率決議與主席記者會。事件時間已換算為
+ 台灣時間；12月因美國進入冬令時間，為03:00。\\nSource: 
+ Federal Reserve FOMC calendar: https://www.federalreserve.gov/monetarypo
+ licy/fomccalendars.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:fab5081b-727f-5701-8dde-aec35af1ba2e@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】PCE物價／Q2 GDP初值公布
+DTSTART;TZID=Asia/Taipei:20260730T203000
+DTEND;TZID=Asia/Taipei:20260730T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,PCE\,GDP
+DESCRIPTION:BEA Personal Income and Outlays／PCE物價，以及同日GDP
+ 估值更新。事件時間已換算為台灣時間。\\nSource: U.S. BE
+ A release schedule: https://www.bea.gov/news/schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:5c1b70cb-c671-5c55-ad4a-e26c57597f23@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】7月非農就業公布
+DTSTART;TZID=Asia/Taipei:20260807T203000
+DTEND;TZID=Asia/Taipei:20260807T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,就業
+DESCRIPTION:Employment Situation／非農就業報告，影響利率預
+ 期與景氣循環判讀。事件時間已換算為台灣時間。\\nSou
+ rce: U.S. BLS 2026 release schedule: https://www.bls.gov/schedule/2026/h
+ ome.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:3c2d98ae-7ccd-56c9-8d85-6eadfa55dc90@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】上市櫃7月營收公告期限
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260811
+TRANSP:TRANSPARENT
+LOCATION:公開資訊觀測站
+CATEGORIES:台股\,月營收\,基本面
+DESCRIPTION:上市公司每月十日前申報上月份營業額資料；
+ 實務上重大個股會在公告前後提前反映。\\nSource: TWSE re
+ gulation knowledge base: monthly revenue filed before the 10th of each m
+ onth.
+END:VEVENT
+BEGIN:VEVENT
+UID:81dbf6a6-fff3-5709-ae56-7f86ccb631c4@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】7月CPI公布
+DTSTART;TZID=Asia/Taipei:20260812T203000
+DTEND;TZID=Asia/Taipei:20260812T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,CPI
+DESCRIPTION:美國消費者物價指數，影響利率預期、美債殖
+ 利率、美元與科技股估值。事件時間已換算為台灣時間
+ 。\\nSource: U.S. BLS 2026 release schedule: https://www.bls.gov/schedu
+ le/2026/home.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:4fa44d18-6ea9-5868-90bc-7e3de78f2529@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】7月PPI公布
+DTSTART;TZID=Asia/Taipei:20260813T203000
+DTEND;TZID=Asia/Taipei:20260813T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,PPI
+DESCRIPTION:美國生產者物價指數，常作為通膨與企業成本
+ 壓力的輔助觀察。事件時間已換算為台灣時間。\\nSource
+ : U.S. BLS 2026 release schedule: https://www.bls.gov/schedule/2026/home
+ .htm
+END:VEVENT
+BEGIN:VEVENT
+UID:6ebf6832-1c11-539b-b905-3716733ad727@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】上市櫃Q2財報公告期限
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+TRANSP:TRANSPARENT
+LOCATION:公開資訊觀測站
+CATEGORIES:台股\,財報\,基本面
+DESCRIPTION:一般上市櫃公司季報公告期限提醒；不同產業
+ 或第一上市、金融保險業可能另有適用規定。\\nSource: T
+ WSE/TPEX regulations and financial reporting deadline notices.
+END:VEVENT
+BEGIN:VEVENT
+UID:ca028a4e-93a9-51c2-a1a9-75f7a48b6db0@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】台指期／台指選月結算
+DTSTART;VALUE=DATE:20260819
+DTEND;VALUE=DATE:20260820
+TRANSP:TRANSPARENT
+LOCATION:台灣期貨市場
+CATEGORIES:台股\,期貨\,選擇權\,結算
+DESCRIPTION:台指期與台指選擇權月到期契約最後交易日；
+ 權值股與指數尾盤波動需留意。\\nSource: TAIFEX 2026 trading
+  calendar: https://www.taifex.com.tw/file/taifex/CHINESE/4/2026Calendar.
+ pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:8686bfa4-5345-54be-a1d4-bcf927d4799f@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】PCE物價／Q2 GDP二估公布
+DTSTART;TZID=Asia/Taipei:20260826T203000
+DTEND;TZID=Asia/Taipei:20260826T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,PCE\,GDP
+DESCRIPTION:BEA Personal Income and Outlays／PCE物價，以及同日GDP
+ 估值更新。事件時間已換算為台灣時間。\\nSource: U.S. BE
+ A release schedule: https://www.bea.gov/news/schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:2ff5fb36-0834-5fb6-929f-97f157f571b8@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】8月非農就業公布
+DTSTART;TZID=Asia/Taipei:20260904T203000
+DTEND;TZID=Asia/Taipei:20260904T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,就業
+DESCRIPTION:Employment Situation／非農就業報告，影響利率預
+ 期與景氣循環判讀。事件時間已換算為台灣時間。\\nSou
+ rce: U.S. BLS 2026 release schedule: https://www.bls.gov/schedule/2026/h
+ ome.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:ba34ac5d-c08b-51ca-9c29-c388dd1244fb@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美股】Labor Day休市
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+TRANSP:TRANSPARENT
+LOCATION:美國市場
+CATEGORIES:美股\,休市
+DESCRIPTION:NYSE／Nasdaq交易日曆；提前收盤通常為美東時間
+ 13:00。\\nSource: NYSE/Nasdaq market holiday calendars.
+END:VEVENT
+BEGIN:VEVENT
+UID:c6659e53-71d2-5e62-b12c-f9c7ca147269@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】8月PPI公布
+DTSTART;TZID=Asia/Taipei:20260910T203000
+DTEND;TZID=Asia/Taipei:20260910T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,PPI
+DESCRIPTION:美國生產者物價指數，常作為通膨與企業成本
+ 壓力的輔助觀察。事件時間已換算為台灣時間。\\nSource
+ : U.S. BLS 2026 release schedule: https://www.bls.gov/schedule/2026/home
+ .htm
+END:VEVENT
+BEGIN:VEVENT
+UID:6f5df874-c4cb-52c7-885f-479d8c47ad6f@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】上市櫃8月營收公告期限
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+TRANSP:TRANSPARENT
+LOCATION:公開資訊觀測站
+CATEGORIES:台股\,月營收\,基本面
+DESCRIPTION:上市公司每月十日前申報上月份營業額資料；
+ 實務上重大個股會在公告前後提前反映。\\nSource: TWSE re
+ gulation knowledge base: monthly revenue filed before the 10th of each m
+ onth.
+END:VEVENT
+BEGIN:VEVENT
+UID:c420dccd-a9a2-5a67-8e2f-b44a47342fa0@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】8月CPI公布
+DTSTART;TZID=Asia/Taipei:20260911T203000
+DTEND;TZID=Asia/Taipei:20260911T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,CPI
+DESCRIPTION:美國消費者物價指數，影響利率預期、美債殖
+ 利率、美元與科技股估值。事件時間已換算為台灣時間
+ 。\\nSource: U.S. BLS 2026 release schedule: https://www.bls.gov/schedu
+ le/2026/home.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:c5f0b76c-140b-582a-9af8-4ec99866d81f@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】台指期／台指選月結算
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+TRANSP:TRANSPARENT
+LOCATION:台灣期貨市場
+CATEGORIES:台股\,期貨\,選擇權\,結算
+DESCRIPTION:台指期與台指選擇權月到期契約最後交易日；
+ 權值股與指數尾盤波動需留意。\\nSource: TAIFEX 2026 trading
+  calendar: https://www.taifex.com.tw/file/taifex/CHINESE/4/2026Calendar.
+ pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:9e824ce7-a0b0-53de-8f2e-883b60ec12fa@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】FOMC利率決議／記者會
+DTSTART;TZID=Asia/Taipei:20260917T020000
+DTEND;TZID=Asia/Taipei:20260917T033000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,FOMC
+DESCRIPTION:Fed利率決議與主席記者會。事件時間已換算為
+ 台灣時間；12月因美國進入冬令時間，為03:00。\\nSource: 
+ Federal Reserve FOMC calendar: https://www.federalreserve.gov/monetarypo
+ licy/fomccalendars.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:94a37545-499d-5e18-804c-d576dfc335ad@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台灣】中央銀行理監事會
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+TRANSP:TRANSPARENT
+LOCATION:台灣
+CATEGORIES:台股\,總經\,央行
+DESCRIPTION:台灣央行理監事聯席會議；會後召開記者會，
+ 需留意利率、匯率與房市信用管制訊號。\\nSource: Central
+  Bank of the Republic of China (Taiwan) 2026 board-meeting schedule: htt
+ ps://www.cbc.gov.tw/tw/cp-302-189514-82841-1.html
+END:VEVENT
+BEGIN:VEVENT
+UID:dfffb506-78a9-5467-8d60-ced6139e12c0@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美股】四巫日／季度選擇權與期貨到期
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+TRANSP:TRANSPARENT
+LOCATION:美國市場
+CATEGORIES:美股\,選擇權\,四巫日
+DESCRIPTION:美股季度衍生性商品到期與再平衡，容易放大
+ 成交量與尾盤波動。6月因Juneteenth休市，需特別留意提
+ 前到期安排。\\nSource: Cboe 2026 options expiration calendar: http
+ s://cdn.cboe.com/resources/options/Cboe2026OPTIONSCalendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:8338a61c-be92-567d-ba02-4eb45f303802@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】中秋節休市
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+TRANSP:TRANSPARENT
+LOCATION:台灣證券市場
+CATEGORIES:台股\,休市
+DESCRIPTION:台灣證券交易所115年市場開休市日期。\\nSource:
+  TWSE 2026 market holiday schedule: https://www.twse.com.tw/holidaySched
+ ule/holidaySchedule?response=html
+END:VEVENT
+BEGIN:VEVENT
+UID:567d7fd3-d176-5a54-8b9e-8cd6bceea0ab@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】教師節休市
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+TRANSP:TRANSPARENT
+LOCATION:台灣證券市場
+CATEGORIES:台股\,休市
+DESCRIPTION:台灣證券交易所115年市場開休市日期。\\nSource:
+  TWSE 2026 market holiday schedule: https://www.twse.com.tw/holidaySched
+ ule/holidaySchedule?response=html
+END:VEVENT
+BEGIN:VEVENT
+UID:c1c11cb1-aea7-596d-9534-2f0b1093b98f@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】PCE物價／Q2 GDP三估公布
+DTSTART;TZID=Asia/Taipei:20260930T203000
+DTEND;TZID=Asia/Taipei:20260930T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,PCE\,GDP
+DESCRIPTION:BEA Personal Income and Outlays／PCE物價，以及同日GDP
+ 估值更新。事件時間已換算為台灣時間。\\nSource: U.S. BE
+ A release schedule: https://www.bea.gov/news/schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:443b34a5-a03e-59d2-9929-95420df2c0d4@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】9月非農就業公布
+DTSTART;TZID=Asia/Taipei:20261002T203000
+DTEND;TZID=Asia/Taipei:20261002T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,就業
+DESCRIPTION:Employment Situation／非農就業報告，影響利率預
+ 期與景氣循環判讀。事件時間已換算為台灣時間。\\nSou
+ rce: U.S. BLS 2026 release schedule: https://www.bls.gov/schedule/2026/h
+ ome.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:2fcc4e18-b1da-5172-b2d6-9b3667c6efd0@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】國慶日補假休市
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+TRANSP:TRANSPARENT
+LOCATION:台灣證券市場
+CATEGORIES:台股\,休市
+DESCRIPTION:台灣證券交易所115年市場開休市日期。\\nSource:
+  TWSE 2026 market holiday schedule: https://www.twse.com.tw/holidaySched
+ ule/holidaySchedule?response=html
+END:VEVENT
+BEGIN:VEVENT
+UID:08d379d6-bd78-5f97-9c98-40e4a892c55a@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】上市櫃9月營收公告期限（10日遇假日留
+ 意順延）
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+TRANSP:TRANSPARENT
+LOCATION:公開資訊觀測站
+CATEGORIES:台股\,月營收\,基本面
+DESCRIPTION:上市公司每月十日前申報上月份營業額資料；
+ 實務上重大個股會在公告前後提前反映。\\nSource: TWSE re
+ gulation knowledge base: monthly revenue filed before the 10th of each m
+ onth.
+END:VEVENT
+BEGIN:VEVENT
+UID:82e33037-c342-57c3-a85b-445e0acb4a48@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】9月CPI公布
+DTSTART;TZID=Asia/Taipei:20261014T203000
+DTEND;TZID=Asia/Taipei:20261014T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,CPI
+DESCRIPTION:美國消費者物價指數，影響利率預期、美債殖
+ 利率、美元與科技股估值。事件時間已換算為台灣時間
+ 。\\nSource: U.S. BLS 2026 release schedule: https://www.bls.gov/schedu
+ le/2026/home.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:d3a55429-5ee3-5581-a029-cb627e950c57@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】9月PPI公布
+DTSTART;TZID=Asia/Taipei:20261015T203000
+DTEND;TZID=Asia/Taipei:20261015T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,PPI
+DESCRIPTION:美國生產者物價指數，常作為通膨與企業成本
+ 壓力的輔助觀察。事件時間已換算為台灣時間。\\nSource
+ : U.S. BLS 2026 release schedule: https://www.bls.gov/schedule/2026/home
+ .htm
+END:VEVENT
+BEGIN:VEVENT
+UID:2f6d89fe-7f67-5750-a954-9adf9c03754a@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】台指期／台指選月結算
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+TRANSP:TRANSPARENT
+LOCATION:台灣期貨市場
+CATEGORIES:台股\,期貨\,選擇權\,結算
+DESCRIPTION:台指期與台指選擇權月到期契約最後交易日；
+ 權值股與指數尾盤波動需留意。\\nSource: TAIFEX 2026 trading
+  calendar: https://www.taifex.com.tw/file/taifex/CHINESE/4/2026Calendar.
+ pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:2997910b-045e-5dc7-9543-15c035b8a57a@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】光復節補假休市
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+TRANSP:TRANSPARENT
+LOCATION:台灣證券市場
+CATEGORIES:台股\,休市
+DESCRIPTION:台灣證券交易所115年市場開休市日期。\\nSource:
+  TWSE 2026 market holiday schedule: https://www.twse.com.tw/holidaySched
+ ule/holidaySchedule?response=html
+END:VEVENT
+BEGIN:VEVENT
+UID:3282b398-a589-53a6-ad41-0b4f182b543b@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】FOMC利率決議／記者會
+DTSTART;TZID=Asia/Taipei:20261029T020000
+DTEND;TZID=Asia/Taipei:20261029T033000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,FOMC
+DESCRIPTION:Fed利率決議與主席記者會。事件時間已換算為
+ 台灣時間；12月因美國進入冬令時間，為03:00。\\nSource: 
+ Federal Reserve FOMC calendar: https://www.federalreserve.gov/monetarypo
+ licy/fomccalendars.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:8482a7f3-8a7b-5146-94f9-072d41c8ea7a@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】PCE物價／Q3 GDP初值公布
+DTSTART;TZID=Asia/Taipei:20261029T203000
+DTEND;TZID=Asia/Taipei:20261029T210000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,PCE\,GDP
+DESCRIPTION:BEA Personal Income and Outlays／PCE物價，以及同日GDP
+ 估值更新。事件時間已換算為台灣時間。\\nSource: U.S. BE
+ A release schedule: https://www.bea.gov/news/schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:8bf1cfd4-0efe-5e0e-b3ab-ed8c84cc03b2@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】10月非農就業公布
+DTSTART;TZID=Asia/Taipei:20261106T213000
+DTEND;TZID=Asia/Taipei:20261106T220000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,就業
+DESCRIPTION:Employment Situation／非農就業報告，影響利率預
+ 期與景氣循環判讀。事件時間已換算為台灣時間。\\nSou
+ rce: U.S. BLS 2026 release schedule: https://www.bls.gov/schedule/2026/h
+ ome.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:5897ecd5-b13c-5bcd-b30d-1c9746c97dd6@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】10月CPI公布
+DTSTART;TZID=Asia/Taipei:20261110T213000
+DTEND;TZID=Asia/Taipei:20261110T220000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,CPI
+DESCRIPTION:美國消費者物價指數，影響利率預期、美債殖
+ 利率、美元與科技股估值。事件時間已換算為台灣時間
+ 。\\nSource: U.S. BLS 2026 release schedule: https://www.bls.gov/schedu
+ le/2026/home.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:d4066a78-4c68-51a0-af32-9b273edbffc1@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】上市櫃10月營收公告期限
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+TRANSP:TRANSPARENT
+LOCATION:公開資訊觀測站
+CATEGORIES:台股\,月營收\,基本面
+DESCRIPTION:上市公司每月十日前申報上月份營業額資料；
+ 實務上重大個股會在公告前後提前反映。\\nSource: TWSE re
+ gulation knowledge base: monthly revenue filed before the 10th of each m
+ onth.
+END:VEVENT
+BEGIN:VEVENT
+UID:89c7f928-8566-58a4-a554-ba2e08106ffd@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】10月PPI公布
+DTSTART;TZID=Asia/Taipei:20261113T213000
+DTEND;TZID=Asia/Taipei:20261113T220000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,PPI
+DESCRIPTION:美國生產者物價指數，常作為通膨與企業成本
+ 壓力的輔助觀察。事件時間已換算為台灣時間。\\nSource
+ : U.S. BLS 2026 release schedule: https://www.bls.gov/schedule/2026/home
+ .htm
+END:VEVENT
+BEGIN:VEVENT
+UID:360079b4-77f8-5f77-b3e7-68457f259388@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】上市櫃Q3財報公告期限
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+TRANSP:TRANSPARENT
+LOCATION:公開資訊觀測站
+CATEGORIES:台股\,財報\,基本面
+DESCRIPTION:一般上市櫃公司季報公告期限提醒；不同產業
+ 或第一上市、金融保險業可能另有適用規定。\\nSource: T
+ WSE/TPEX regulations and financial reporting deadline notices.
+END:VEVENT
+BEGIN:VEVENT
+UID:b108af90-ddcc-5020-bbf8-abacdd4edc06@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】台指期／台指選月結算
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+TRANSP:TRANSPARENT
+LOCATION:台灣期貨市場
+CATEGORIES:台股\,期貨\,選擇權\,結算
+DESCRIPTION:台指期與台指選擇權月到期契約最後交易日；
+ 權值股與指數尾盤波動需留意。\\nSource: TAIFEX 2026 trading
+  calendar: https://www.taifex.com.tw/file/taifex/CHINESE/4/2026Calendar.
+ pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:19aca22d-d9f2-54b5-9da0-898e12eb5dc8@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】PCE物價／Q3 GDP二估公布
+DTSTART;TZID=Asia/Taipei:20261125T213000
+DTEND;TZID=Asia/Taipei:20261125T220000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,PCE\,GDP
+DESCRIPTION:BEA Personal Income and Outlays／PCE物價，以及同日GDP
+ 估值更新。事件時間已換算為台灣時間。\\nSource: U.S. BE
+ A release schedule: https://www.bea.gov/news/schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:a811a964-a496-5c3f-bb5d-275284634e9d@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美股】Thanksgiving休市
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+TRANSP:TRANSPARENT
+LOCATION:美國市場
+CATEGORIES:美股\,休市
+DESCRIPTION:NYSE／Nasdaq交易日曆；提前收盤通常為美東時間
+ 13:00。\\nSource: NYSE/Nasdaq market holiday calendars.
+END:VEVENT
+BEGIN:VEVENT
+UID:6375e15c-2671-583d-b21b-a445de0337dc@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美股】感恩節後提前收盤
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+TRANSP:TRANSPARENT
+LOCATION:美國市場
+CATEGORIES:美股\,休市
+DESCRIPTION:NYSE／Nasdaq交易日曆；提前收盤通常為美東時間
+ 13:00。\\nSource: NYSE/Nasdaq market holiday calendars.
+END:VEVENT
+BEGIN:VEVENT
+UID:2d55eeba-3986-5085-b95b-59700a394314@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】11月非農就業公布
+DTSTART;TZID=Asia/Taipei:20261204T213000
+DTEND;TZID=Asia/Taipei:20261204T220000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,就業
+DESCRIPTION:Employment Situation／非農就業報告，影響利率預
+ 期與景氣循環判讀。事件時間已換算為台灣時間。\\nSou
+ rce: U.S. BLS 2026 release schedule: https://www.bls.gov/schedule/2026/h
+ ome.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:beaf23ac-a05f-59d3-8692-31e8fa6c8648@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】FOMC利率決議／記者會
+DTSTART;TZID=Asia/Taipei:20261210T030000
+DTEND;TZID=Asia/Taipei:20261210T043000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,FOMC
+DESCRIPTION:Fed利率決議與主席記者會。事件時間已換算為
+ 台灣時間；12月因美國進入冬令時間，為03:00。\\nSource: 
+ Federal Reserve FOMC calendar: https://www.federalreserve.gov/monetarypo
+ licy/fomccalendars.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:51bdd7c7-6832-58b5-85a7-9eddeac6b6b3@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】11月CPI公布
+DTSTART;TZID=Asia/Taipei:20261210T213000
+DTEND;TZID=Asia/Taipei:20261210T220000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,CPI
+DESCRIPTION:美國消費者物價指數，影響利率預期、美債殖
+ 利率、美元與科技股估值。事件時間已換算為台灣時間
+ 。\\nSource: U.S. BLS 2026 release schedule: https://www.bls.gov/schedu
+ le/2026/home.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:91c9780d-4b37-5a85-94e2-bd55a24a44f4@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】上市櫃11月營收公告期限
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+TRANSP:TRANSPARENT
+LOCATION:公開資訊觀測站
+CATEGORIES:台股\,月營收\,基本面
+DESCRIPTION:上市公司每月十日前申報上月份營業額資料；
+ 實務上重大個股會在公告前後提前反映。\\nSource: TWSE re
+ gulation knowledge base: monthly revenue filed before the 10th of each m
+ onth.
+END:VEVENT
+BEGIN:VEVENT
+UID:d61865b2-58ec-5281-8e72-c5c33c0f280a@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】11月PPI公布
+DTSTART;TZID=Asia/Taipei:20261215T213000
+DTEND;TZID=Asia/Taipei:20261215T220000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,PPI
+DESCRIPTION:美國生產者物價指數，常作為通膨與企業成本
+ 壓力的輔助觀察。事件時間已換算為台灣時間。\\nSource
+ : U.S. BLS 2026 release schedule: https://www.bls.gov/schedule/2026/home
+ .htm
+END:VEVENT
+BEGIN:VEVENT
+UID:9fb86de9-1678-516f-b750-4e0591180e87@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】台指期／台指選月結算
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+TRANSP:TRANSPARENT
+LOCATION:台灣期貨市場
+CATEGORIES:台股\,期貨\,選擇權\,結算
+DESCRIPTION:台指期與台指選擇權月到期契約最後交易日；
+ 權值股與指數尾盤波動需留意。\\nSource: TAIFEX 2026 trading
+  calendar: https://www.taifex.com.tw/file/taifex/CHINESE/4/2026Calendar.
+ pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:fabcdde9-18dc-5313-88c7-5ee6acc5ef09@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台灣】中央銀行理監事會
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+TRANSP:TRANSPARENT
+LOCATION:台灣
+CATEGORIES:台股\,總經\,央行
+DESCRIPTION:台灣央行理監事聯席會議；會後召開記者會，
+ 需留意利率、匯率與房市信用管制訊號。\\nSource: Central
+  Bank of the Republic of China (Taiwan) 2026 board-meeting schedule: htt
+ ps://www.cbc.gov.tw/tw/cp-302-189514-82841-1.html
+END:VEVENT
+BEGIN:VEVENT
+UID:334a9b6a-4958-520c-81cf-abdbeb988206@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美股】四巫日／季度選擇權與期貨到期
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+TRANSP:TRANSPARENT
+LOCATION:美國市場
+CATEGORIES:美股\,選擇權\,四巫日
+DESCRIPTION:美股季度衍生性商品到期與再平衡，容易放大
+ 成交量與尾盤波動。6月因Juneteenth休市，需特別留意提
+ 前到期安排。\\nSource: Cboe 2026 options expiration calendar: http
+ s://cdn.cboe.com/resources/options/Cboe2026OPTIONSCalendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:52fc65b4-df50-5478-b55e-bb315142cd2b@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美國】PCE物價／Q3 GDP三估公布
+DTSTART;TZID=Asia/Taipei:20261223T213000
+DTEND;TZID=Asia/Taipei:20261223T220000
+TRANSP:OPAQUE
+LOCATION:美國／台灣時間
+CATEGORIES:美股\,總經\,PCE\,GDP
+DESCRIPTION:BEA Personal Income and Outlays／PCE物價，以及同日GDP
+ 估值更新。事件時間已換算為台灣時間。\\nSource: U.S. BE
+ A release schedule: https://www.bea.gov/news/schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:5d5be964-04f4-5885-af48-5e49093a8fa4@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美股】Christmas Eve提前收盤
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+TRANSP:TRANSPARENT
+LOCATION:美國市場
+CATEGORIES:美股\,休市
+DESCRIPTION:NYSE／Nasdaq交易日曆；提前收盤通常為美東時間
+ 13:00。\\nSource: NYSE/Nasdaq market holiday calendars.
+END:VEVENT
+BEGIN:VEVENT
+UID:f7e1a316-5020-53e5-8e43-a39e96f09caf@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【美股】Christmas Day休市
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+TRANSP:TRANSPARENT
+LOCATION:美國市場
+CATEGORIES:美股\,休市
+DESCRIPTION:NYSE／Nasdaq交易日曆；提前收盤通常為美東時間
+ 13:00。\\nSource: NYSE/Nasdaq market holiday calendars.
+END:VEVENT
+BEGIN:VEVENT
+UID:26863213-5656-5421-adb7-5d954b2ebec0@openai-market-calendar
+DTSTAMP:20260615T065914Z
+SUMMARY:【台股】行憲紀念日休市
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+TRANSP:TRANSPARENT
+LOCATION:台灣證券市場
+CATEGORIES:台股\,休市
+DESCRIPTION:台灣證券交易所115年市場開休市日期。\\nSource:
+  TWSE 2026 market holiday schedule: https://www.twse.com.tw/holidaySched
+ ule/holidaySchedule?response=html
+END:VEVENT
+END:VCALENDAR
